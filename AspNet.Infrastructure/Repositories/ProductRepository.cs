@@ -23,6 +23,7 @@ namespace AspNet.Infrastructure.Repositories
 
         public async Task AddProduct(Product product)
         {
+            product.Id = 0;
             _context.Set<Product>().Add(product);
             _context.SaveChanges();
             await Task.CompletedTask;
