@@ -1,0 +1,23 @@
+﻿using AspNet.Domain;
+using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+namespace AspNet.Application.IRepository
+{
+    public interface IProductRepository
+    {
+        Task<IEnumerable<Product>> GetAllProducts();
+        Task AddProduct(Product product);
+
+        Task<Product> GetProductById(int id);
+
+        Task<ActionResult> DeleteProduct(int id);
+
+        Task<ActionResult> UpdateProduct(int id, Product product);
+    }
+}
