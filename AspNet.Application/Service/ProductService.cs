@@ -1,11 +1,6 @@
 ﻿using AspNet.Application.IService;
 using AspNet.Domain;
 using AspNet.Application.IRepository;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AspNet.Application.Service

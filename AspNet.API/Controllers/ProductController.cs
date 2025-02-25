@@ -1,5 +1,4 @@
 using Microsoft.AspNetCore.Mvc;
-using AspNet.Application.IService;
 using MediatR;
 using AspNet.Domain;
 using AspNet.API.Queries;
